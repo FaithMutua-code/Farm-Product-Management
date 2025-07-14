@@ -36,7 +36,8 @@ To run this project, ensure you have:
 Clone or download the project to your local machine or server.
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/FaithMutua-code/Farm-Product-Management
+
 ```
 
 ### 2. Configure the Web Server
