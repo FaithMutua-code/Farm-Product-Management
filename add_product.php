@@ -55,7 +55,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Insert new product with image
             $sql = "INSERT INTO products (name, description, price, quantity, staff_id, image_path) 
                     VALUES ('$name', '$description', '$price', '$quantity', '{$_SESSION['staff_id']}', " . 
-                    ($imagePath ? "'$imagePath'" : "NULL") . ")";
+                    ($imagePath ? "'$imagePath'" : "'uploads/default.png'")
+                    . ")";
             
             if ($conn->query($sql) === TRUE) {
                 $success = "Product added successfully";
@@ -302,4 +303,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </footer>
     </div>
 </body>
-</html>
+</html> 
