@@ -1,0 +1,21 @@
+/* Custom styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Form input focus styles */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+    border-color: #3b82f6;
+}
+
+/* Table row hover effect */
+tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Button transition */
+button, a {
+    transition: all 0.2s ease-in-out;
+}
